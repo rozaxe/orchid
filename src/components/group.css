@@ -1,0 +1,38 @@
+
+.or-group {
+    @apply flex flex-row;
+
+    & > .or-input {
+        @apply flex-1 z-0;
+
+        &:focus-within {
+            @apply z-10;
+        }
+
+        &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 0;
+        }
+
+        &:not(:first-child) {
+            border-left-color: var(--ui-field);
+
+            &:focus-within {
+                border-left-color: var(--ui-focus);
+            }
+        }
+
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: -1px;
+        }
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+            margin-right: 0;
+            margin-left: -1px;
+        }
+    }
+}

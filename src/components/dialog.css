@@ -1,0 +1,16 @@
+
+.or-dialog {
+    @apply m-1 flex flex-col bg-ui-modal-background text-ui-text shadow-md rounded overflow-hidden;
+}
+
+.or-dialog__header {
+    @apply m-2 text-xl font-bold;
+}
+
+.or-dialog__content {
+    @apply m-2 flex-grow;
+}
+
+.or-dialog__footer {
+    @apply flex flex-row-reverse p-1;
+}

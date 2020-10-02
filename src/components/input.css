@@ -1,0 +1,80 @@
+
+.or-input {
+    @apply m-1 px-2 py-1 rounded rounded-b-none border border-ui-rest bg-ui-rest flex flex-row items-center flex-auto flex-grow-0 outline-none text-ui-text;
+    border-bottom-color: var(--ui-field);
+
+    &:focus-within {
+        @apply rounded border border-ui-focus;
+    }
+
+    & .or-input__info:first-of-type {
+        @apply ml-0;
+    }
+
+    &::placeholder {
+        @apply text-ui-text-placeholder opacity-100;
+    }
+}
+
+.or-input__info {
+    @apply text-ui-text-placeholder ml-2;
+}
+
+.or-input__input {
+    @apply flex-grow min-w-0 w-full outline-none bg-transparent;
+
+    &::placeholder {
+        @apply text-ui-text-placeholder opacity-100;
+    }
+}
+
+.or-input__info + .or-input__input {
+    @apply ml-2;
+}
+
+.or-select-raw {
+    @apply or-input cursor-pointer;
+}
+
+.or-select {
+    @apply or-input cursor-pointer appearance-none relative;
+
+    &:focus-within {
+        @apply  border-ui-focus;
+        /*border-bottom-color: var(--ui-focus);*/
+    }
+
+    & .or-select__info:first-of-type {
+        @apply ml-0;
+    }
+}
+
+.or-select__info {
+     @apply or-input__info;
+}
+
+.or-select__input {
+    @apply or-input__input;
+}
+
+.or-select__info + .or-select__input {
+    @apply ml-2;
+}
+
+.or-select__options {
+    @apply absolute bg-ui-rest py-1 shadow-md z-10 rounded-b flex flex-col items-stretch;
+    width: calc(100% + 2px);
+    left: -1px;
+    top: calc(100% + 1px);
+
+    & .or-select__option:last-of-type {
+    }
+}
+
+.or-select__option {
+    @apply py-1 px-2;
+
+    &:hover {
+        @apply bg-ui-hover;
+    }
+}

@@ -1,0 +1,12 @@
+
+.or-toast {
+    @apply m-1 py-1 px-2 rounded shadow-md bg-blue-70 text-sm text-white;
+}
+
+.or-toast__title {
+    @apply m-1 mb-0 font-bold;
+}
+
+.or-toast__content {
+    @apply m-1 mt-0;
+}

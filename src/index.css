@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@import "./components/theme.css";
+
+@import "./components/app.css";
+@import "./components/button.css";
+@import "./components/dialog.css";
+@import "./components/example.css";
+@import "./components/flex.css";
+@import "./components/group.css";
+@import "./components/input.css";
+@import "./components/menu.css";
+@import "./components/text.css";
+@import "./components/toast.css";
+@import "./components/toolbar.css";
+
+@tailwind utilities;

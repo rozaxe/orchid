@@ -1,0 +1,80 @@
+
+.or-theme--light {
+    --ui-background: theme(colors.white);
+    --ui-text: theme(colors.black);
+    --ui-text-placeholder: theme(colors.gray.40);
+    --ui-text-inverted: theme(colors.white);
+
+    --ui-rest: theme(colors.gray.10);
+    --ui-hover: theme(colors.gray.15);
+    --ui-active: theme(colors.gray.30);
+    --ui-interactive-text: theme(colors.black);
+
+    --ui-primary-rest: theme(colors.blue.60);
+    --ui-primary-hover: theme(colors.blue.65);
+    --ui-primary-active: theme(colors.blue.80);
+    --ui-primary-interactive-text: theme(colors.white);
+
+    --ui-primary-outline-rest: theme(colors.blue.60);
+    --ui-primary-outline-hover: theme(colors.blue.65);
+    --ui-primary-outline-hover-background: theme(colors.blue.10);
+    --ui-primary-outline-hover-text: theme(colors.blue.65);
+    --ui-primary-outline-active: theme(colors.blue.80);
+    --ui-primary-outline-active-background: theme(colors.blue.20);
+    --ui-primary-outline-active-text: theme(colors.blue.80);
+
+    --ui-disabled: theme(colors.gray.30);
+    --ui-disabled-text: theme(colors.gray.70);
+
+    --ui-field: theme(colors.gray.30);
+    --ui-focus: theme(colors.blue.60);
+
+    --ui-modal-background: theme(colors.white);
+}
+
+.or-theme--light-gray {
+    @apply or-theme--light;
+    --ui-background: theme(colors.gray.10);
+    --ui-rest: theme(colors.white);
+
+    --ui-field: theme(colors.gray.20);
+}
+
+.or-theme--dark {
+    @apply or-theme--light;
+    --ui-background: theme(colors.gray.100);
+
+    --ui-text: theme(colors.gray.10);
+    --ui-text-placeholder: theme(colors.gray.60);
+    --ui-text-inverted: theme(colors.black);
+
+    --ui-rest: theme(colors.gray.90);
+    --ui-hover: theme(colors.gray.85);
+    --ui-active: theme(colors.gray.70);
+    --ui-interactive-text: theme(colors.white);
+
+    --ui-primary-outline-rest: theme(colors.white);
+    --ui-primary-outline-hover: theme(colors.white);
+    --ui-primary-outline-hover-background: theme(colors.gray.85);
+    --ui-primary-outline-hover-text: theme(colors.white);
+    --ui-primary-outline-active: theme(colors.white);
+    --ui-primary-outline-active-background: theme(colors.gray.70);
+    --ui-primary-outline-active-text: theme(colors.white);
+
+    --ui-disabled: theme(colors.gray.70);
+    --ui-disabled-text: theme(colors.gray.50);
+
+    --ui-field: theme(colors.gray.60);
+
+    --ui-modal-background: theme(colors.gray.90);
+}
+
+.or-theme--dark-gray {
+    @apply or-theme--dark;
+    --ui-background: theme(colors.gray.90);
+
+    --ui-rest: theme(colors.gray.100);
+    --ui-field: theme(colors.gray.70);
+
+    --ui-modal-background: theme(colors.gray.80);
+}

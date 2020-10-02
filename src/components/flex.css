@@ -1,0 +1,16 @@
+
+.or-row {
+    @apply flex flex-col bg-ui-background;
+}
+
+.or-row--padded {
+    @apply or-row p-1;
+}
+
+.or-column {
+    @apply flex flex-col bg-ui-background;
+}
+
+.or-column--padded {
+    @apply or-column p-1;
+}

@@ -1,0 +1,16 @@
+
+.or-example {
+    @apply m-1 bg-white rounded border border-gray-30;
+
+    &.or-example--dark {
+        @apply bg-gray-10;
+    }
+
+    & .or-example__show {
+        @apply m-1 flex flex-col;
+    }
+
+    & .or-example__code {
+        @apply px-2 py-1 bg-gray-30 text-sm overflow-auto;
+    }
+}

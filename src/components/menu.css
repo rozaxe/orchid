@@ -1,0 +1,17 @@
+
+.or-menu {
+    @apply m-1 py-1 flex flex-col bg-ui-rest rounded shadow text-black whitespace-no-wrap text-left text-ui-text;
+
+    & .or-menu__divider {
+        @apply my-1 bg-ui-field h-px flex-0;
+        flex-basis: 1px;
+    }
+
+    & .or-menu__item {
+        @apply px-2 py-1;
+
+        &:hover {
+            @apply bg-ui-hover cursor-pointer;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+
+/* Button */
+
+.or-button\:hover {
+    @apply bg-ui-hover border-ui-hover;
+}
+
+.or-button\:active {
+    @apply border-ui-active bg-ui-active;
+}
+
+.or-button\:disabled {
+    @apply cursor-not-allowed text-ui-disabled-text border-ui-disabled bg-ui-disabled;
+}
+
+.or-button {
+    @apply m-1 px-2 py-1 rounded border border-ui-rest bg-ui-rest text-ui-interactive-text;
+    min-height: 34px;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button:hover;
+    }
+
+    &:active {
+        @apply or-button:active;
+    }
+
+    &:disabled {
+        @apply or-button:disabled;
+    }
+}
+
+/* Primary button */
+
+.or-button--primary\:hover {
+    @apply bg-ui-primary-hover border-ui-primary-hover;
+}
+
+.or-button--primary\:active {
+    @apply bg-ui-primary-active border-ui-primary-active;
+}
+
+.or-button--primary {
+    @apply or-button text-ui-primary-interactive-text border-ui-primary-rest bg-ui-primary-rest;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button--primary:hover;
+    }
+
+    &:active {
+        @apply or-button--primary:active;
+    }
+
+    &:disabled {
+        @apply or-button:disabled;
+    }
+}
+
+/* Ghost button */
+
+.or-button--ghost {
+    @apply or-button bg-transparent border-transparent;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button:hover;
+    }
+
+    &:active {
+        @apply or-button:active;
+    }
+
+    &:disabled {
+        @apply or-button:disabled;
+    }
+}
+
+/* Outline primary button */
+
+.or-button--primary-outline\:hover {
+    @apply bg-ui-primary-outline-hover-background border-ui-primary-outline-hover text-ui-primary-outline-hover-text;
+}
+
+.or-button--primary-outline\:active {
+    @apply bg-ui-primary-outline-active-background border-ui-primary-outline-active text-ui-primary-outline-active-text;
+}
+
+.or-button--primary-outline {
+    @apply or-button--primary bg-transparent border-ui-primary-outline-rest text-ui-primary-outline-rest;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button--primary-outline:hover;
+    }
+
+    &:active {
+        @apply or-button--primary-outline:active;
+    }
+
+    &:disabled {
+        @apply or-button:disabled bg-transparent text-ui-disabled;
+    }
+}
+
+/* Ghost primary button */
+
+.or-button--primary-ghost {
+    @apply or-button--primary-outline border-transparent;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button--primary-outline:hover border-transparent;
+    }
+
+    &:active {
+        @apply or-button--primary-outline:active border-transparent;
+    }
+
+    &:disabled {
+        @apply or-button:disabled;
+    }
+}
+
+/* Small primary buttons */
+
+.or-button-sm--primary {
+    @apply or-button--primary text-xs;
+    min-height: 28px;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button--primary:hover;
+    }
+
+    &:active {
+        @apply or-button--primary:active;
+    }
+
+    &:disabled {
+        @apply or-button:disabled;
+    }
+}

@@ -1,0 +1,7 @@
+
+.or-toolbar {
+    @apply flex flex-row m-1 p-1 items-center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--ui-field);
+}

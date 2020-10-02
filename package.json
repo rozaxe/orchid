@@ -1,0 +1,30 @@
+{
+    "name": "r-orchid",
+    "version": "0.0.15",
+    "main": "build/index.css",
+    "files": [
+        "build"
+    ],
+    "scripts": {
+        "prepare": "yarn build",
+        "build": "parcel build src/index.css -d build",
+        "build:web": "parcel build example/index.html -d public --public-url ./",
+        "start": "parcel -p 8080 example/index.html",
+        "postversion": "git push && git push --tags"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.14.0",
+        "highlight.js": "^10.2.0",
+        "htm": "^3.0.4",
+        "parcel-bundler": "^1.12.4",
+        "postcss-nested": "^4.2.1",
+        "preact": ">=10",
+        "preact-render-to-string": "^5.1.9",
+        "sass": "^1.26.11",
+        "typeface-inter": "^3.12.0"
+    },
+    "dependencies": {
+        "@tailwindcss/ui": "^0.3.0",
+        "tailwindcss": "^1.4.6"
+    }
+}
