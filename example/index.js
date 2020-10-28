@@ -103,7 +103,7 @@ function App() {
     }
 
     return html`
-        <div class="or-app ${theme}">
+        <div class="or-app--padded ${theme}">
             <div class="or-toolbar -m-1 mb-2">
                 <div class="mx-4" style="height: 32px">
                     <${Orchid} />
@@ -176,7 +176,13 @@ function App() {
                         <div class="or-menu__item">Item 1</div>
                     </div>
                 <//>
-                
+
+                <${Card} title="Section">
+                    <div class="or-section">
+                        Background color change
+                    </div>
+                <//>
+
                 <${Card} title="Select">
                     <select class="or-select-raw">
                         <option>White</option>

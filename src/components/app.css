@@ -1,6 +1,10 @@
 
 .or-app {
-    @apply flex flex-col p-1 w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-ui-background text-ui-text;
+    @apply flex flex-col w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-ui-background text-ui-text;
+}
+
+.or-app--padded {
+    @apply or-app p-1;
 }
 
 .or-app__content {
