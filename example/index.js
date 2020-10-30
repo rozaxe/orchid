@@ -97,13 +97,24 @@ function Card({ children, title }) {
 
 function App() {
     const [theme, setTheme] = useState('or-theme--light-gray')
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     const handleSelectTheme = (value) => {
         setTheme(value)
     }
 
+    const handleToggleModel = () => {
+        if (isModalOpen) {
+            document.body.classList.remove('overflow-hidden')
+            setIsModalOpen(false)
+        } else {
+            document.body.classList.add('overflow-hidden')
+            setIsModalOpen(true)
+        }
+    }
+
     return html`
-        <div class="or-app--padded ${theme}">
+        <div class="or-app--padded ${theme} ${isModalOpen ? 'overflow-hidden' : ''}">
             <div class="or-toolbar -m-1 mb-2">
                 <div class="mx-4" style="height: 32px">
                     <${Orchid} />
@@ -123,12 +134,38 @@ function App() {
                     <button class="or-button--primary" disabled>Lorem ipsum</button>
                     <button class="or-button--primary-outline" disabled><i class="fas fa-coffee mr-2" /> Lorem ipsum</button>
                 <//>
-                <${Card} title="Input">
-                    <input value="Lorem ipsum" class="or-input" />
-                    <div class="or-input">
-                        <div class="or-input__info">€</div>
-                        <input placeholder="42" class="or-input__input" />
-                        <div class="or-input__info">.0</div>
+
+                <${Card} title="Dialog">
+                    <button onClick=${handleToggleModel} class="or-button">Open dialog</button>
+                    ${isModalOpen && html`
+                        <div class="or-overlay--backdrop">
+                            <div class="or-dialog--padded w-6/12g mb-2 mt-8 mx-auto">
+                                <div class="or-dialog__header">
+                                    Dialog title
+                                </div>
+                                <div class="or-dialog__content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra, ante sit amet luctus fermentum, nulla sem pulvinar erat, non commodo orci leo quis tellus. Suspendisse suscipit sodales massa eu auctor. Suspendisse lacinia lacinia tellus vel congue. Nullam nec ligula vitae erat laoreet efficitur. Quisque dapibus tellus non odio tempor laoreet. Maecenas dignissim lacus tempor, lobortis tellus vel, sagittis sem. Duis rutrum, nunc et eleifend blandit, lacus sem posuere est, vitae mollis ipsum nisl pulvinar augue. Pellentesque venenatis libero at cursus laoreet. In vestibulum enim magna. Phasellus interdum ac neque ac feugiat. Pellentesque justo tellus, porttitor et massa vel, tristique laoreet libero. Suspendisse venenatis metus et velit dapibus ultricies. Cras vulputate ligula vel lacus dictum cursus. Morbi rhoncus purus eu ligula sagittis euismod. Suspendisse venenatis mi quis sapien vulputate efficitur. Vestibulum nec consectetur eros. 
+                                </div>
+                                <div class="or-dialog__content">
+                                    Donec suscipit ante non sem placerat, iaculis malesuada mauris lacinia. Praesent nulla nisi, laoreet a faucibus cursus, suscipit sed lacus. Aenean eget malesuada nisl. Nunc tincidunt sodales dapibus. Mauris consequat ligula eu vehicula finibus. Maecenas eleifend dapibus condimentum. Sed molestie ultricies ligula, quis sagittis leo facilisis eu. Duis ultricies, felis a pretium fringilla, neque augue auctor arcu, sit amet gravida ex sapien id nibh. Aenean suscipit est enim, et tempus sem ullamcorper et. Fusce nulla lorem, fermentum non lacinia eu, pretium in ipsum. Sed fringilla non ipsum vel eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                </div>
+                                &nbsp;
+                                <div class="flex flex-row-reverse">
+                                    <button class="or-button--primary" onClick=${handleToggleModel}>Close</button>
+                                    <button class="or-button--primary-ghost">Lorem ipsum</button>
+                                </div>
+                            </div>
+                        </div>
+                    `}
+                <//>
+
+                <${Card} title="Divider">
+                    <div class="or-text">Lorem ipsum</div>
+                    <div class="or-divider" />
+                    <div class="flex flex-row">
+                        <div class="or-text">Lorem ipsum</div>
+                        <div class="or-divider" />
+                        <div class="or-text">Lorem ipsum</div>
                     </div>
                 <//>
 
@@ -145,28 +182,15 @@ function App() {
                     </div>
                 <//>
 
-                <${Card} title="Toast">
-                    <div class="or-toast">
-                        <div class="or-toast__title">Message title</div>
-                        <div class="or-toast__content">Lorem ipsum dolor sit amet</div>
+                <${Card} title="Input">
+                    <input value="Lorem ipsum" class="or-input" />
+                    <div class="or-input">
+                        <div class="or-input__info">€</div>
+                        <input placeholder="42" class="or-input__input" />
+                        <div class="or-input__info">.0</div>
                     </div>
                 <//>
 
-                <${Card} title="Dialog">
-                    <div class="or-dialog">
-                        <div class="or-dialog__header">
-                            Dialog title
-                        </div>
-                        <div class="or-dialog__content">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div class="or-dialog__footer">
-                            <button class="or-button--primary">Lorem ipsum</button>
-                            <button class="or-button--primary-ghost">Lorem ipsum</button>
-                        </div>
-                    </div>
-                <//>
-                
                 <${Card} title="Menu">
                     <div class="or-menu">
                         <div class="or-menu__item">Item 1</div>
@@ -183,17 +207,24 @@ function App() {
                     </div>
                 <//>
 
+                <${Card} title="Text">
+                    <div class="or-text">
+                        Hello !
+                    </div>
+                <//>
+
+                <${Card} title="Toast">
+                    <div class="or-toast">
+                        <div class="or-toast__title">Message title</div>
+                        <div class="or-toast__content">Lorem ipsum dolor sit amet</div>
+                    </div>
+                <//>
+
                 <${Card} title="Select">
                     <select class="or-select-raw">
                         <option>White</option>
                         <option>Gray</option>
                     </select>
-                <//>
-
-                <${Card} title="Text">
-                    <div class="or-text">
-                        Hello !
-                    </div>
                 <//>
 
                 <${Card} title="Spinner">

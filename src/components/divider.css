@@ -1,0 +1,11 @@
+
+.or-divider {
+    @apply bg-ui-rest m-1;
+    flex: 0 0 1px;
+}
+
+.or-divider--xl {
+    @apply or-divider;
+    flex-basis: 2px;
+}
+

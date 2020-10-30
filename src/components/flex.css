@@ -1,16 +1,32 @@
 
 .or-row {
-    @apply flex flex-col bg-ui-background;
+    @apply flex flex-row;
+}
+
+.or-row-reverse {
+    @apply flex flex-row-reverse;
 }
 
 .or-row--padded {
     @apply or-row p-1;
 }
 
+.or-row-reversed--padded {
+    @apply or-row-reverse p-1;
+}
+
 .or-column {
-    @apply flex flex-col bg-ui-background;
+    @apply flex flex-col;
+}
+
+.or-column-reverse {
+    @apply flex flex-col-reverse;
 }
 
 .or-column--padded {
     @apply or-column p-1;
+}
+
+.or-column-reverse--padded {
+    @apply or-column-reverse p-1;
 }

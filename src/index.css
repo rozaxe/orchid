@@ -7,11 +7,13 @@
 @import "./components/app.css";
 @import "./components/button.css";
 @import "./components/dialog.css";
+@import "./components/divider.css";
 @import "./components/example.css";
 @import "./components/flex.css";
 @import "./components/group.css";
 @import "./components/input.css";
 @import "./components/menu.css";
+@import "./components/overlay.css";
 @import "./components/section.css";
 @import "./components/text.css";
 @import "./components/toast.css";
