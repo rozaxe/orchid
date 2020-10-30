@@ -83,7 +83,7 @@ function Card({ children, title }) {
             <${Title}>${title}<//>
             <${Select} class="m-0" icon="fa-palette" value=${theme} onChange=${handleSelectTheme} options=${THEMES} />
             <div class="or-column--padded bg-ui-rest rounded-b">
-                <div class="m-1 rounded or-column--padded ${theme}">
+                <div class="m-1 rounded or-column--padded or-section ${theme}">
                     ${children}
                 </div>
                 <pre>
