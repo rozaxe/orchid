@@ -141,6 +141,28 @@
 
 /* Small primary buttons */
 
+.or-button-sm {
+    @apply or-button text-xs;
+    min-height: 28px;
+    min-width: 28px;
+
+    &:focus {
+        @apply outline-none;
+    }
+
+    &:hover {
+        @apply or-button:hover;
+    }
+
+    &:active {
+        @apply or-button:active;
+    }
+
+    &:disabled {
+        @apply or-button:disabled;
+    }
+}
+
 .or-button-sm--primary {
     @apply or-button--primary text-xs;
     min-height: 28px;

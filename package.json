@@ -7,7 +7,7 @@
     ],
     "scripts": {
         "prepare": "yarn build",
-        "build": "parcel build src/index.css -d build",
+        "build": "cp ./{colors.js,theme.js,tailwind.config.js} ./build/ && parcel build src/index.css -d build",
         "build:web": "parcel build example/index.html -d public --public-url ./",
         "start": "parcel -p 8080 example/index.html",
         "postversion": "git push && git push --tags"

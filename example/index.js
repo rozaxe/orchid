@@ -130,6 +130,7 @@ function App() {
                     <button class="or-button--primary-outline">Lorem ipsum</button>
                     <button class="or-button--ghost">Lorem ipsum</button>
                     <button class="or-button--primary-ghost">Lorem ipsum</button>
+                    <button class="or-button-sm">Lorem ipsum</button>
                     <button class="or-button-sm--primary">Lorem ipsum</button>
                     <button class="or-button--primary" disabled>Lorem ipsum</button>
                     <button class="or-button--primary-outline" disabled><i class="fas fa-coffee mr-2" /> Lorem ipsum</button>
