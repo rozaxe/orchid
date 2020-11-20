@@ -14,7 +14,7 @@
 }
 
 .or-button {
-    @apply m-1 px-2 py-1 rounded border border-ui-rest bg-ui-rest text-ui-interactive-text;
+    @apply m-1 px-2 py-1 rounded border border-ui-rest bg-ui-rest text-ui-interactive-text cursor-pointer;
     min-height: 34px;
     min-width: 34px;
 
