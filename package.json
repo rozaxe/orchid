@@ -1,6 +1,6 @@
 {
     "name": "r-orchid",
-    "version": "0.0.19",
+    "version": "0.1.0",
     "main": "build/index.css",
     "files": [
         "build"
