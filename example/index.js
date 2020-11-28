@@ -4,7 +4,7 @@ import { useState, useCallback, useRef } from 'preact/hooks'
 import hljs from 'highlight.js/lib/core'
 import xml from 'highlight.js/lib/languages/xml'
 import 'highlight.js/styles/github-gist.css'
-import { renderToString } from 'preact-render-to-string'
+import renderToString from 'preact-render-to-string'
 import htm from 'htm'
 
 import '@fortawesome/fontawesome-free/css/all.css'

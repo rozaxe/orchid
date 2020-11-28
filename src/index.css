@@ -1,6 +1,6 @@
-@tailwind base;
+@import "tailwindcss/base";
 
-@tailwind components;
+@import "tailwindcss/components";
 
 @import "./components/theme.css";
 
@@ -19,4 +19,4 @@
 @import "./components/toast.css";
 @import "./components/toolbar.css";
 
-@tailwind utilities;
+@import "tailwindcss/utilities";
