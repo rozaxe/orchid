@@ -7,7 +7,7 @@
     ],
     "scripts": {
         "build": "mkdir -p build && cp ./{colors.js,theme.js,tailwind.config.js} ./build/ && parcel build src/index.css --dist-dir build",
-        "build:web": "parcel build example/index.html -d public --public-url ./",
+        "build:web": "parcel build example/index.html --dist-dir public --public-url ./",
         "start": "parcel -p 8080 example/index.html"
     },
     "devDependencies": {
