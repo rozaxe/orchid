@@ -1,14 +1,17 @@
 {
     "name": "r-orchid",
     "version": "0.2.0",
-    "main": "build/index.css",
+    "main": "lib/index.css",
     "files": [
-        "build"
+        "lib"
     ],
     "scripts": {
-        "build": "mkdir -p build && cp ./{colors.js,theme.js,tailwind.config.js} ./build/ && parcel build src/index.css --dist-dir build",
-        "build:web": "parcel build example/index.html --dist-dir public --public-url ./",
-        "start": "parcel -p 8080 example/index.html"
+        "build": "mkdir -p lib && cp ./{colors.js,theme.js,tailwind.config.js} ./lib/ && postcss --config config ./src/index.css --output ./lib/index.css",
+        "build:css": "postcss --config config ./src/index.css --output ./example/index.css",
+        "build:web": "yarn build:css && parcel build example/index.html -d public --public-url ./",
+        "start": "run-p start:css start:web",
+        "start:css": "postcss --config config ./src/index.css --output ./example/index.css --watch",
+        "start:web": "parcel -p 8080 example/index.html"
     },
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^5.14.0",
@@ -16,7 +19,8 @@
         "cssnano": "^4.1.10",
         "highlight.js": "^10.2.0",
         "htm": "^3.0.4",
-        "parcel": "^2.0.0-nightly.462",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.4",
         "postcss": "^8.1.10",
         "postcss-cli": "^8.3.0",
         "postcss-import": "^13.0.0",
