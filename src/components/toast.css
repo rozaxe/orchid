@@ -3,6 +3,10 @@
     @apply m-1 py-1 px-2 rounded shadow-md bg-blue-70 text-sm text-white;
 }
 
+.or-toast--danger {
+    @apply or-toast bg-red-60;
+}
+
 .or-toast__title {
     @apply m-1 mb-0 font-bold;
 }

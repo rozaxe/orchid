@@ -219,6 +219,11 @@ function App() {
                         <div class="or-toast__title">Message title</div>
                         <div class="or-toast__content">Lorem ipsum dolor sit amet</div>
                     </div>
+                    <div class="or-toast--danger">
+                        <div class="or-toast__title mb-1">
+                            Some danger
+                        </div>
+                    </div>
                 <//>
 
                 <${Card} title="Select">

@@ -53,9 +53,15 @@ const gray = {
     100: gray100,
 }
 
+const red60 = '#e40042'
+const red = {
+    60: red60,
+}
+
 module.exports = {
     black,
     blue,
     gray,
+    red,
     white,
 }
