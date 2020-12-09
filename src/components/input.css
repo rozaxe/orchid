@@ -2,6 +2,7 @@
 .or-input {
     @apply m-1 px-2 py-1 rounded rounded-b-none border border-ui-rest bg-ui-rest flex flex-row items-center flex-0 min-w-2/12g outline-none text-ui-text;
     border-bottom-color: var(--ui-field);
+    min-height: 34px;
 
     &:focus-within {
         @apply rounded border border-ui-focus;
@@ -22,6 +23,7 @@
 
 .or-input__input {
     @apply flex-grow min-w-0 w-full outline-none bg-transparent;
+    min-height: 34px;
 
     &::placeholder {
         @apply text-ui-text-placeholder opacity-100;
