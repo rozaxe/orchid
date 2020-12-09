@@ -121,19 +121,19 @@ function App() {
                 </div>
                 <div class="font-bold text-3xl">Orchid</div>
                 <div class="flex-1" />
-                <${Select} class="theme-selection" icon="fa-palette" value=${theme} onChange=${handleSelectTheme} options=${THEMES} />
+                <${Select} icon="fa-palette" value=${theme} onChange=${handleSelectTheme} options=${THEMES} />
             </div>
             <div class="or-app__content">
                 <${Card} title="Button">
                     <button class="or-button">Lorem ipsum</button>
                     <button class="or-button--primary">Lorem ipsum</button>
-                    <button class="or-button--primary-outline">Lorem ipsum</button>
+                    <button class="or-button--primary--outline">Lorem ipsum</button>
                     <button class="or-button--ghost">Lorem ipsum</button>
-                    <button class="or-button--primary-ghost">Lorem ipsum</button>
-                    <button class="or-button-sm">Lorem ipsum</button>
-                    <button class="or-button-sm--primary">Lorem ipsum</button>
+                    <button class="or-button--primary--ghost">Lorem ipsum</button>
+                    <button class="or-button--sm">Lorem ipsum</button>
+                    <button class="or-button--sm--primary">Lorem ipsum</button>
                     <button class="or-button--primary" disabled>Lorem ipsum</button>
-                    <button class="or-button--primary-outline" disabled><i class="fas fa-coffee mr-2" /> Lorem ipsum</button>
+                    <button class="or-button--primary--outline" disabled><i class="fas fa-coffee mr-2" /> Lorem ipsum</button>
                 <//>
 
                 <${Card} title="Dialog">
@@ -153,7 +153,7 @@ function App() {
                                 &nbsp;
                                 <div class="flex flex-row-reverse">
                                     <button class="or-button--primary" onClick=${handleToggleModel}>Close</button>
-                                    <button class="or-button--primary-ghost">Lorem ipsum</button>
+                                    <button class="or-button--primary--ghost">Lorem ipsum</button>
                                 </div>
                             </div>
                         </div>

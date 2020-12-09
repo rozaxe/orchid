@@ -1,6 +1,6 @@
 
 .or-divider {
-    @apply bg-ui-rest m-1;
+    @apply bg-ui-rest m-1 self-stretch;
     flex: 0 0 1px;
 }
 

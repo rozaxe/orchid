@@ -1,15 +1,15 @@
 
 /* Button */
 
-.or-button\:hover {
+._or-button--hover {
     @apply bg-ui-hover border-ui-hover;
 }
 
-.or-button\:active {
+._or-button--active {
     @apply border-ui-active bg-ui-active;
 }
 
-.or-button\:disabled {
+._or-button--disabled {
     @apply cursor-not-allowed text-ui-disabled-text border-ui-disabled bg-ui-disabled;
 }
 
@@ -23,25 +23,25 @@
     }
 
     &:hover {
-        @apply or-button:hover;
+        @apply _or-button--hover;
     }
 
     &:active {
-        @apply or-button:active;
+        @apply _or-button--active;
     }
 
     &:disabled {
-        @apply or-button:disabled;
+        @apply _or-button--disabled;
     }
 }
 
 /* Primary button */
 
-.or-button--primary\:hover {
+._or-button--primary--hover {
     @apply bg-ui-primary-hover border-ui-primary-hover;
 }
 
-.or-button--primary\:active {
+._or-button--primary--active {
     @apply bg-ui-primary-active border-ui-primary-active;
 }
 
@@ -53,15 +53,15 @@
     }
 
     &:hover {
-        @apply or-button--primary:hover;
+        @apply _or-button--primary--hover;
     }
 
     &:active {
-        @apply or-button--primary:active;
+        @apply _or-button--primary--active;
     }
 
     &:disabled {
-        @apply or-button:disabled;
+        @apply _or-button--disabled;
     }
 }
 
@@ -75,29 +75,29 @@
     }
 
     &:hover {
-        @apply or-button:hover;
+        @apply _or-button--hover;
     }
 
     &:active {
-        @apply or-button:active;
+        @apply _or-button--active;
     }
 
     &:disabled {
-        @apply or-button:disabled;
+        @apply _or-button--disabled;
     }
 }
 
 /* Outline primary button */
 
-.or-button--primary-outline\:hover {
+._or-button--primary--outline--hover {
     @apply bg-ui-primary-outline-hover-background border-ui-primary-outline-hover text-ui-primary-outline-hover-text;
 }
 
-.or-button--primary-outline\:active {
+._or-button--primary--outline--active {
     @apply bg-ui-primary-outline-active-background border-ui-primary-outline-active text-ui-primary-outline-active-text;
 }
 
-.or-button--primary-outline {
+.or-button--primary--outline {
     @apply or-button--primary bg-transparent border-ui-primary-outline-rest text-ui-primary-outline-rest;
 
     &:focus {
@@ -105,43 +105,43 @@
     }
 
     &:hover {
-        @apply or-button--primary-outline:hover;
+        @apply _or-button--primary--outline--hover;
     }
 
     &:active {
-        @apply or-button--primary-outline:active;
+        @apply _or-button--primary--outline--active;
     }
 
     &:disabled {
-        @apply or-button:disabled bg-transparent text-ui-disabled;
+        @apply _or-button--disabled bg-transparent text-ui-disabled;
     }
 }
 
 /* Ghost primary button */
 
-.or-button--primary-ghost {
-    @apply or-button--primary-outline border-transparent;
+.or-button--primary--ghost {
+    @apply or-button--primary--outline border-transparent;
 
     &:focus {
         @apply outline-none;
     }
 
     &:hover {
-        @apply or-button--primary-outline:hover border-transparent;
+        @apply _or-button--primary--outline--hover border-transparent;
     }
 
     &:active {
-        @apply or-button--primary-outline:active border-transparent;
+        @apply _or-button--primary--outline--active border-transparent;
     }
 
     &:disabled {
-        @apply or-button:disabled;
+        @apply _or-button--disabled;
     }
 }
 
 /* Small primary buttons */
 
-.or-button-sm {
+.or-button--sm {
     @apply or-button text-xs;
     min-height: 28px;
     min-width: 28px;
@@ -151,19 +151,19 @@
     }
 
     &:hover {
-        @apply or-button:hover;
+        @apply _or-button--hover;
     }
 
     &:active {
-        @apply or-button:active;
+        @apply _or-button--active;
     }
 
     &:disabled {
-        @apply or-button:disabled;
+        @apply _or-button--disabled;
     }
 }
 
-.or-button-sm--primary {
+.or-button--sm--primary {
     @apply or-button--primary text-xs;
     min-height: 28px;
     min-width: 28px;
@@ -173,14 +173,14 @@
     }
 
     &:hover {
-        @apply or-button--primary:hover;
+        @apply _or-button--primary--hover;
     }
 
     &:active {
-        @apply or-button--primary:active;
+        @apply _or-button--primary--active;
     }
 
     &:disabled {
-        @apply or-button:disabled;
+        @apply _or-button--disabled;
     }
 }

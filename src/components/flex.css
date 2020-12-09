@@ -1,32 +1,32 @@
 
 .or-row {
-    @apply flex flex-row;
+    @apply flex flex-row items-stretch;
 }
 
-.or-row-reverse {
-    @apply flex flex-row-reverse;
+.or-row--reverse {
+    @apply flex flex-row-reverse items-stretch;
 }
 
 .or-row--padded {
     @apply or-row p-1;
 }
 
-.or-row-reversed--padded {
-    @apply or-row-reverse p-1;
+.or-row--reverse--padded {
+    @apply or-row--reverse p-1;
 }
 
 .or-column {
-    @apply flex flex-col;
+    @apply flex flex-col items-stretch;
 }
 
-.or-column-reverse {
-    @apply flex flex-col-reverse;
+.or-column--reverse {
+    @apply flex flex-col-reverse items-stretch;
 }
 
 .or-column--padded {
     @apply or-column p-1;
 }
 
-.or-column-reverse--padded {
-    @apply or-column-reverse p-1;
+.or-column--reverse--padded {
+    @apply or-column--reverse p-1;
 }
