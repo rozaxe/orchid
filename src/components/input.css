@@ -23,7 +23,6 @@
 
 .or-input__input {
     @apply flex-grow min-w-0 w-full outline-none bg-transparent;
-    min-height: 34px;
 
     &::placeholder {
         @apply text-ui-text-placeholder opacity-100;
@@ -64,7 +63,7 @@
 }
 
 .or-select__options {
-    @apply absolute bg-ui-rest py-1 shadow-md z-10 rounded-b flex flex-col items-stretch;
+    @apply absolute bg-ui-rest py-1 shadow-md rounded-b flex flex-col items-stretch z-20;
     width: calc(100% + 2px);
     left: -1px;
     top: calc(100% + 1px);

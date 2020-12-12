@@ -233,6 +233,10 @@ function App() {
                     </select>
                 <//>
 
+                <${Card} title="Skeleton">
+                    <div class="or-skeleton">Hello world !</div>
+                <//>
+
                 <${Card} title="Spinner">
                     <svg width="24" height="24" viewBox="-25 -25 400 400">
                         <circle

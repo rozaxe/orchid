@@ -1,0 +1,19 @@
+
+.or-skeleton {
+    @apply relative rounded overflow-hidden;
+}
+
+.or-skeleton::after {
+    @apply absolute inset-0 bg-gray-30 z-10;
+    content: '';
+    animation: or-skeleton-glow 1s linear infinite alternate;
+}
+
+@keyframes or-skeleton-glow {
+    from {
+        @apply bg-gray-30;
+    }
+    to   {
+        @apply bg-gray-10;
+    }
+}
